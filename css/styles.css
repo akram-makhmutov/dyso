@@ -1,64 +1,22 @@
-{
-	margin: 0;
-	padding: 0;
-}
- 
-h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
- 
-fieldset,img { border: 0; }
- 
-legend { color: #000; }
- 
-li { list-style: none; }
- 
-sup { vertical-align: text-top; }
- 
-sub { vertical-align: text-bottom; }
- 
-table
-{
-	border-collapse: collapse;
-	border-spacing: 0;
-}
- 
-caption, th, td
-{
-	text-align: left;
-	vertical-align: top;
-	font-weight: normal;
-}
- 
-input, textarea, select
-{
-	font-size: 110%;
-	line-height: 1.1;
-}
- 
-abbr, acronym
-{
-	border-bottom: .1em dotted;
-	cursor: help;
-}
-
 .logo {
   text-align: center;
   margin-top: 95px;
  }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+
 body {
-  color:#333;
-  margin: 0;
+  color:#000000;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 }
 
-h1 {
-  margin-top: 50px;
-  margin-bottom: 10px;
-  font-size: 60px;
-  text-align: center;
-}
+
 
 h2 {
   margin-top: 0;
