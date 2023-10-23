@@ -7,20 +7,19 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin-top: 45px;
-  font-size: 19px;
-  font-weight: 50;
-  font-family: 'Verdana';
-  letter-spacing: 9px;
+  font-size: 21px;
+  font-weight: 20;
+  font-family: 'Comfortaa', sans-serif;
+  letter-spacing: 8px;
 }
 
 h2 {
   text-align: center;
   text-transform: uppercase;
   margin-top: 45px;
-  font-size: 88px;
-  font-weight: bold;
-  font-family: 'Rleud Black';
-  color:#FD79FD;
+  font-size: 105px;
+  font-family: 'Bai Jamjuree SemiBold', sans-serif;
+  color:#EF16F3;
  }
 
 body {
