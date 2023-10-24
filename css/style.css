@@ -8,31 +8,61 @@
     url('path/filename.ttf') format('truetype');
 }
 
-.logo {
-  text-align: center;
-  margin-top: 95px;
- }
+/*.logo {*/
+/*  text-align: center;*/
+/*  margin-top: 95px;*/
+/* }*/
 
-p {
-  font-size: 121px;
+/*p {*/
+/*  font-size: 121px;*/
 
+/*}*/
+
+/*h1 {*/
+/*  text-align: center;*/
+/*  text-transform: uppercase;*/
+/*  margin-top: -80px;*/
+/*  font-size: 21px;*/
+/*  font-weight: 20;*/
+/*  font-family: 'Comfortaa', sans-serif;*/
+/*  letter-spacing: 8px;*/
+/*}*/
+
+/*h2 {*/
+/*  text-align: center;*/
+/*  text-transform: uppercase;*/
+/*  margin-top: 0px;*/
+/*  font-size: 105px;*/
+/*  font-family: 'Bai Jamjuree SemiBold', sans-serif;*/
+/*  color:#EF16F3;*/
+/* }*/
+
+.container{
+  max-width: 1920px;
+  padding: 60px 120px;
 }
-
-h1 {
-  text-align: center;
+.mainLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.mainTitle p{
   text-transform: uppercase;
-  margin-top: -80px;
-  font-size: 21px;
-  font-weight: 20;
-  font-family: 'Comfortaa', sans-serif;
   letter-spacing: 8px;
+  font-weight: 20;
+  font-size: 22px;
+  font-family: 'Comfortaa', sans-serif;
 }
-
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 0px;
+.mainTitle span{
   font-size: 105px;
   font-family: 'Bai Jamjuree SemiBold', sans-serif;
   color:#EF16F3;
- }
+}
