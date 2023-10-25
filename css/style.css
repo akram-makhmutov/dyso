@@ -19,8 +19,8 @@
 }
 
 .mainTitle {
-  gap: 45px;
-  margin-top: 65px;
+  gap: 50px;
+  margin-top: 75px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -45,7 +45,25 @@
   color:#363636;
   font-weight: 300;
   font-size: 18px;
-  text-align: center;
   letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
   font-family: 'Comfortaa';
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+  border: 2px solid green;
+  color: #53A61F;
+  border-radius: 50px;
+  font-size: 28px;
+  padding: 20px;
+  width: 310px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: transparent;
 }
