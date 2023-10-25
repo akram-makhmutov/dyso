@@ -51,11 +51,21 @@
   font-family: 'Comfortaa';
 }
 
-.button {
+.mainTitle a {
+  text-decoration: none;
+}
+
+.mainTitle a:after {
+padding-left: 5px; /* Расстояние от иконки до текста */
+vertical-align: text-bottom; /* Выравнивание по вертикали */
+font-size: 0.8em; /* Размер иконки */
+}
+
+.mainTitle button {
   margin: 0 auto;
   display: block;
-  border: 2px solid green;
-  color: #53A61F;
+  border: 2px solid #50b313;
+  color: #50b313;
   border-radius: 50px;
   font-size: 28px;
   padding: 20px;
