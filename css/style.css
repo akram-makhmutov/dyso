@@ -43,7 +43,6 @@
 
 .mainTitle p {
   color:#363636;
-  font-weight: 300;
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 17px;
@@ -53,27 +52,25 @@
 
 .mainTitle a {
   text-decoration: none;
-}
-
-.mainTitle a:after {
-padding-left: 5px; /* Расстояние от иконки до текста */
-vertical-align: text-bottom; /* Выравнивание по вертикали */
-font-size: 0.8em; /* Размер иконки */
+  color: #50b313;
 }
 
 .mainTitle button {
   margin: 0 auto;
   display: block;
+  font-weight: 500;
   border: 2px solid #50b313;
   color: #50b313;
   border-radius: 50px;
-  font-size: 28px;
-  padding: 20px;
+  font-size: 19px;
+  padding: 15px;
   width: 310px;
-  text-align: center;
   transition-duration: 0.4s;
+  font-family: 'Comfortaa';
+  text-align: center;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   background-color: transparent;
 }
+
