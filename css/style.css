@@ -1,17 +1,21 @@
 @font-face {
-  font-family: FontName;
-  src: url("path/filename.eot");
-  src: url("path/filename.eot?#iefix") format("embedded-opentype"),
-    url("path/filename.woff2") format("woff2"),
-    url("path/filename.woff") format("woff"),
-    url("path/filename.ttf") format("truetype");
+  font-family: Unbounded-ExtraLight;
+  src: url(../fonts/Unbounded-ExtraLight.ttf);
+}
+@font-face {
+  font-family: Unbounded-Light;
+  src: url(../fonts/Unbounded-Light.ttf);
 }
 
-@import url("https://fonts.cdnfonts.com/css/bai-jamjuree");
+@font-face {
+  font-family: Unbounded-Regular;
+  src: url(../fonts/Unbounded-Regular.ttf);
+}
+
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 
 body {
-  background-image: url("img/background.jpg");
+  background-image: url("../img/background.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -28,8 +32,8 @@ body {
 }
 
 .mainTitle {
-  gap: 50px;
-  margin-top: 75px;
+  gap: 60px;
+  margin-top: 70px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -38,10 +42,10 @@ body {
 
 .mainTitle h1 {
   color: #000000;
-  font-size: 20px;
-  letter-spacing: 8px;
+  font-size: 18px;
+  letter-spacing: 6px;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Unbounded-Light";
   @media (max-width: 540px) {
     font-size: 22px;
     text-align: center;
@@ -50,9 +54,9 @@ body {
 
 .mainTitle span {
   color: #ef16f3;
-  font-size: 105px;
+  font-size: 85px;
   text-transform: uppercase;
-  font-family: "Bai Jamjuree SemiBold", semi-bold;
+  font-family: "Unbounded-Regular";
 }
 
 .mainTitle p {
@@ -61,7 +65,7 @@ body {
   letter-spacing: 1px;
   line-height: 15px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Unbounded-Light";
 }
 
 .data {
@@ -72,7 +76,7 @@ body {
 
 .mainTitle a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Unbounded-ExtraLight";
 }
 
 .sendButton a {
@@ -113,6 +117,6 @@ body {
   padding: 15px;
   height: 70px;
   width: 330px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Unbounded-ExtraLight";
   background-color: transparent;
 }
