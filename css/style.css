@@ -1,10 +1,19 @@
 @font-face {
   font-family: FontName;
-  src: url('path/filename.eot');
-  src: url('path/filename.eot?#iefix') format('embedded-opentype'),
-    url('path/filename.woff2') format('woff2'), 
-    url('path/filename.woff') format('woff'),
-    url('path/filename.ttf') format('truetype');
+  src: url("path/filename.eot");
+  src: url("path/filename.eot?#iefix") format("embedded-opentype"),
+    url("path/filename.woff2") format("woff2"),
+    url("path/filename.woff") format("woff"),
+    url("path/filename.ttf") format("truetype");
+}
+
+@import url("https://fonts.cdnfonts.com/css/bai-jamjuree");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+body {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -28,37 +37,58 @@
 }
 
 .mainTitle h1 {
-  font-size: 19px;
+  color: #000000;
+  font-size: 20px;
   letter-spacing: 8px;
   text-transform: uppercase;
-  font-family: 'Comfortaa';
+  font-family: "Montserrat", sans-serif;
+  @media (max-width: 540px) {
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 .mainTitle span {
-  color:#EF16F3;
+  color: #ef16f3;
   font-size: 105px;
   text-transform: uppercase;
-  font-family: 'Bai Jamjuree SemiBold', serif;
+  font-family: "Bai Jamjuree SemiBold", semi-bold;
 }
 
 .mainTitle p {
-  color:#363636;
-  font-size: 18px;
+  color: #000000;
+  font-size: 19px;
   letter-spacing: 1px;
-  line-height: 17px;
+  line-height: 15px;
   text-align: center;
-  font-family: 'Comfortaa';
+  font-family: "Montserrat", sans-serif;
+}
+
+.data {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mainTitle a {
   text-decoration: none;
-  font-family: 'Comfortaa';
-  color: #50b313;
+  font-family: "Montserrat", sans-serif;
 }
 
-.mainTitle button {
-  margin: 0 auto;
-  display: block;
+.sendButton a {
+  color: #50b313;
+  font-weight: 600;
+}
+
+.sendButton:hover a {
+  color: #f112f6;
+}
+
+.sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   font-weight: 500;
   border: 2px solid #50b313;
   color: #50b313;
@@ -66,12 +96,23 @@
   font-size: 19px;
   padding: 15px;
   width: 310px;
-  transition-duration: 0.4s;
-  font-family: 'Comfortaa';
-  text-align: center;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
   background-color: transparent;
 }
 
+.sendButton:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s easy;
+  font-weight: 500;
+  border: 2px solid #f112f6;
+  color: #f112f6;
+  border-radius: 50px;
+  font-size: 19px;
+  padding: 15px;
+  height: 70px;
+  width: 330px;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+}
