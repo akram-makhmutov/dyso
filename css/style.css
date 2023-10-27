@@ -32,8 +32,8 @@ body {
 }
 
 .mainTitle {
-  gap: 60px;
-  margin-top: 70px;
+  gap: 67px;
+  margin-top: 77px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -88,6 +88,16 @@ body {
   color: #f112f6;
 }
 
+.svgMail {
+  font-family: "Unbounded-ExtraLight";
+}
+
+.svgMail:hover svg {
+  fill: transparent;
+  stroke: #f112f6;
+  stroke: #f112f6;
+}
+
 .sendButton {
   display: flex;
   justify-content: center;
@@ -101,6 +111,7 @@ body {
   padding: 15px;
   width: 310px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .sendButton:hover {
@@ -119,4 +130,27 @@ body {
   width: 330px;
   font-family: "Unbounded-ExtraLight";
   background-color: transparent;
+  cursor: pointer;
+}
+
+.blockTitle h1 {
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-transform: none;
+  font-family: "Unbounded-Regular";
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerR {
+  padding: 2px 16px;
 }
