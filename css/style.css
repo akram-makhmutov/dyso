@@ -59,21 +59,21 @@ body {
 
 .mainTitle span {
   color: #ef16f3;
-  font-size: 85px;
+  font-size: 90px;
   text-transform: uppercase;
   font-family: "Unbounded-Regular";
 }
 
 .mainTitle p {
   color: #000000;
-  font-size: 19px;
+  font-size: 17px;
   letter-spacing: 1px;
   line-height: 15px;
   text-align: center;
   font-family: "Unbounded-Light";
 }
 
-.data {
+.mainData {
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -106,14 +106,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   font-weight: 500;
   border: 2px solid #50b313;
   color: #50b313;
   border-radius: 50px;
   font-size: 19px;
   padding: 15px;
-  width: 310px;
+  width: 330px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ body {
   font-size: 19px;
   padding: 15px;
   height: 70px;
-  width: 330px;
+  width: 350px;
   font-family: "Unbounded-ExtraLight";
   background-color: transparent;
   cursor: pointer;
@@ -146,7 +146,7 @@ body {
   font-family: "Unbounded-Regular";
 }
 
-.blockFlexThreeItems {
+.blockFlexItems {
   gap: 60px;
   display: flex;
   align-items: stretch;
@@ -157,8 +157,8 @@ body {
   gap: 30px;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 
 .blockFlex h1 {
@@ -200,6 +200,33 @@ body {
 }
 
 .create-line {
-  height: 500px;
+  height: 430px;
   border-right: 1px solid #000000;
+}
+
+.blockCard {
+  gap: 70px;
+  padding: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 2px solid #D9E4FA;
+  border-radius: 30px;
+}
+
+.blockIcons {
+  gap: 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.blockText {
+  gap: 30px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
 }
