@@ -149,7 +149,7 @@ body {
 .blockFlexItems {
   gap: 60px;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
 }
 
@@ -224,9 +224,17 @@ body {
 }
 
 .blockText {
-  gap: 30px;
+  gap: 25px;
   display: flex;
   align-items: left;
   justify-content: left;
   flex-direction: column;
+}
+
+.blockFewCards {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
