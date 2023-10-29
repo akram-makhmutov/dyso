@@ -238,3 +238,18 @@ body {
   justify-content: center;
   flex-direction: row;
 }
+
+.blockArrows {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.blockArrows span {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
