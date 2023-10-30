@@ -123,15 +123,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  transition: all 0.3s easy;
+  gap: 16px;
+  transition: all 0.5s easy;
   font-weight: 500;
   border: 2px solid #f112f6;
   color: #f112f6;
   border-radius: 50px;
   font-size: 19px;
-  padding: 15px;
-  height: 70px;
+  transform: scale(1.1);
   width: 350px;
   font-family: "Unbounded-ExtraLight";
   background-color: transparent;
@@ -148,14 +147,14 @@ body {
 }
 
 .blockFlexItems {
-  gap: 60px;
+  gap: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .blockFlex {
-  gap: 30px;
+  gap: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,8 +205,8 @@ body {
 }
 
 .blockCard {
-  gap: 70px;
-  padding: 45px;
+  gap: 25px;
+  padding: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,8 +216,8 @@ body {
 }
 
 .blockCard img {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 60%;
 }
 
 .blockIcons {
@@ -230,8 +229,16 @@ body {
 }
 
 .blockIcons {
-  width: 30%;
-  height: 45%;
+  gap: 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.blockIcons img {
+  width: 10%;
+  height: 10%;
 }
 
 .blockText {
@@ -239,6 +246,14 @@ body {
   display: flex;
   align-items: left;
   justify-content: left;
+  flex-direction: column;
+}
+
+.blockOneCard {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -311,7 +326,7 @@ body {
   width: 60px;
   height: 60px;
   color: #ffffff;
-  background-color: #d9e4fa;
+  background-color: #cfdefc;
   border: none;
   font-size: 24px;
   border-radius: 50px;
@@ -325,11 +340,19 @@ body {
   width: 60px;
   height: 60px;
   color: #ffffff;
-  background-color: #d9e4fa;
+  background-color: #cfdefc;
   border: none;
   font-size: 24px;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.prev-button:active {
+  background-color: #c2d6ff;
+}
+
+.next-button:active {
+  background-color: #c2d6ff;
 }
 
 .prev-button {
@@ -341,11 +364,20 @@ body {
 }
 
 .blockMessengers {
-  gap: 30px;
+  gap: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+.app:hover img {
+  transform: scale(1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
 }
 
 .footerTitle {
