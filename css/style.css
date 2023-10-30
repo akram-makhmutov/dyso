@@ -242,15 +242,6 @@ body {
   justify-content: left;
   flex-direction: column;
 }
-/* 
-.blockOneCard {
-
-  gap: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
 
 .blockFewCards {
   gap: 30px;
