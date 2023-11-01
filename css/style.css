@@ -19,12 +19,6 @@
 
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 
-body {
-  background-image: url("../img/background.png");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .container {
   max-width: 1920px;
   padding: 60px 120px;
@@ -86,12 +80,35 @@ body {
 }
 
 .sendButton a {
-  color: #50b313;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid #50b313;
+  color: #50b313;
+  border-radius: 50px;
+  font-size: 19px;
+  padding: 15px;
+  width: 300px;
+  font-family: "Unbounded-ExtraLight";
+  background-color: transparent;
 }
 
 .sendButton:hover a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.5s easy;
+  border: 2px solid #f112f6;
   color: #f112f6;
+  border-radius: 50px;
+  font-size: 19px;
+  transform: scale(1.1);
+  font-family: "Unbounded-ExtraLight";
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .svgMail {
@@ -101,40 +118,6 @@ body {
 .svgMail:hover svg {
   fill: transparent;
   stroke: #f112f6;
-}
-
-.sendButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  font-weight: 500;
-  border: 2px solid #50b313;
-  color: #50b313;
-  border-radius: 50px;
-  font-size: 19px;
-  padding: 15px;
-  width: 330px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.sendButton:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  transition: all 0.5s easy;
-  font-weight: 500;
-  border: 2px solid #f112f6;
-  color: #f112f6;
-  border-radius: 50px;
-  font-size: 19px;
-  transform: scale(1.1);
-  width: 350px;
-  font-family: "Unbounded-ExtraLight";
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .blockName h1 {
