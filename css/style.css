@@ -22,6 +22,13 @@
 .container {
   max-width: 1920px;
   padding: 60px 120px;
+  @media (max-width: 540px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 360px;
+  }
 }
 
 .mainLogo {
@@ -31,6 +38,17 @@
   display: flex;
 }
 
+.mainLogo img {
+  @media (max-width: 540px) {
+    width: 580px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
 .mainTitle {
   gap: 67px;
   margin-top: 77px;
@@ -38,6 +56,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 540px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .mainTitle h1 {
