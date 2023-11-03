@@ -23,11 +23,11 @@
   max-width: 1920px;
   padding: 60px 120px;
   @media (max-width: 540px) {
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px 360px;
   }
 }
 
