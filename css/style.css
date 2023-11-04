@@ -59,8 +59,8 @@
   justify-content: center;
   flex-direction: column;
   @media (max-width: 540px) {
-    gap: 27px;
-    margin-top: 50px;
+    gap: 47px;
+    margin-top: 67px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +100,7 @@
   font-family: "Unbounded-Light";
   @media (max-width: 540px) {
     color: #000000;
-    font-size: 6px;
+    font-size: 12px;
     line-height: 20px;
     text-align: center;
   }
@@ -135,7 +135,8 @@
   font-family: "Unbounded-ExtraLight";
   background-color: transparent;
   @media (max-width: 540px) {
-
+    border: 2px solid #50b313;
+    width: 240px;
   }
 }
 
@@ -153,6 +154,9 @@
   font-family: "Unbounded-ExtraLight";
   background-color: transparent;
   cursor: pointer;
+  @media (max-width: 540px) {
+    width: 240px;
+  }
 }
 
 .svgMail {
@@ -171,6 +175,9 @@
   letter-spacing: 1.8px;
   text-transform: none;
   font-family: "Unbounded-Regular";
+  @media (max-width: 540px) {
+    font-size: 22px;
+  }
 }
 
 .blockFlexItems {
@@ -188,6 +195,15 @@
   flex-direction: column;
 }
 
+.blockFlex img {
+  @media (max-width: 540px) {
+    width: 280px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .blockFlex h1 {
   color: #000000;
   font-size: 30px;
@@ -205,6 +221,10 @@
   line-height: 15px;
   text-transform: none;
   font-family: "Montserrat";
+  @media (max-width: 540px) {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 .blockFlex ul {
