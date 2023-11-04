@@ -37,7 +37,7 @@
   justify-content: center;
   display: flex;
   @media (max-width: 540px) {
-    margin-top: 0px;
+    margin-top: 37px;
   }
 }
 
@@ -59,8 +59,8 @@
   justify-content: center;
   flex-direction: column;
   @media (max-width: 540px) {
-    gap: 47px;
-    margin-top: 67px;
+    gap: 42px;
+    margin-top: 57px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +75,7 @@
   text-transform: uppercase;
   font-family: "Unbounded-Light";
   @media (max-width: 540px) {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
     text-align: center;
   }
@@ -135,7 +135,8 @@
   font-family: "Unbounded-ExtraLight";
   background-color: transparent;
   @media (max-width: 540px) {
-    border: 2px solid #50b313;
+    font-size: 16px;
+    border: 1px solid #50b313;
     width: 240px;
   }
 }
@@ -155,6 +156,8 @@
   background-color: transparent;
   cursor: pointer;
   @media (max-width: 540px) {
+    font-size: 16px;
+    border: 1px solid #f112f6;
     width: 240px;
   }
 }
@@ -176,15 +179,19 @@
   text-transform: none;
   font-family: "Unbounded-Regular";
   @media (max-width: 540px) {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
 .blockFlexItems {
-  gap: 40px;
+  gap: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 540px) {
+
+    display: block;
+  }
 }
 
 .blockFlex {
@@ -193,12 +200,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 540px) {
+    gap: 30px;
+  }
 }
 
 .blockFlex img {
   @media (max-width: 540px) {
-    width: 280px;
-    height: 75px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,7 +231,7 @@
   text-transform: none;
   font-family: "Montserrat";
   @media (max-width: 540px) {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
   }
 }
@@ -236,19 +245,22 @@
   list-style: inside;
   text-transform: none;
   font-family: "Montserrat";
+  @media (max-width: 540px) {
+    font-size: 12px;
+  }
 }
 
 .blockFlex li {
   line-height: 1.6;
 }
 
-.blockFlexEmptyItem {
-  list-style: none;
-}
-
-.create-line {
+.createLine {
   height: 430px;
   border-right: 1px solid #000000;
+  @media (max-width: 540px) {
+    height: 30px;
+    border-right: 0px;
+  }
 }
 
 .blockCard {
@@ -335,6 +347,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @media (max-width: 540px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .prev-button,
