@@ -98,7 +98,7 @@
   font-family: "Unbounded-Light";
   @media (max-width: 720px) {
     color: #000000;
-    font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (540 - 320)));
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (540 - 320)));
     line-height: 20px;
     text-align: center;
   }
@@ -276,7 +276,7 @@
   font-weight: 400;
   font-family: "Montserrat";
   @media (max-width: 940px) {
-    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (940 - 320)));
+    font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (940 - 320)));
   }
 }
 
@@ -365,7 +365,6 @@
   right: 10px;
 }
 
-
 img[hidden] {
   display: none;
   @media (max-width: 1000px) {
@@ -424,7 +423,6 @@ img[hidden] {
   height: 220px;
   object-fit: scale-down;
 }
-
 
 .blockText {
   gap: 24px;
