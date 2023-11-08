@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 40px 20px;
   }
 }
 
@@ -53,7 +54,7 @@
 
 .mainTitle {
   gap: 60px;
-  margin-top: 77px;
+  margin-top: 76px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +181,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 540px) {
+  @media (max-width: 1000px) {
     display: block;
   }
 }
@@ -191,13 +192,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @media (max-width: 540px) {
+  @media (max-width: 1000px) {
     gap: 30px;
   }
 }
 
 .blockFlex img {
-  @media (max-width: 540px) {
+  @media (max-width: 1000px) {
     height: 120px;
     display: flex;
     align-items: center;
@@ -220,10 +221,10 @@
   letter-spacing: 1px;
   text-transform: none;
   font-family: "Montserrat";
-  @media (max-width: 540px) {
+  @media (max-width: 720px) {
     text-align: center;
     line-height: 22px;
-    font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (540 - 320)));
+    font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (540 - 320)));
   }
 }
 
@@ -246,30 +247,45 @@
 }
 
 .createLine {
-  height: 430px;
+  height: 480px;
   border-right: 1px solid #000000;
-  @media (max-width: 540px) {
+  @media (max-width: 1000px) {
     height: 30px;
     border-right: transparent;
   }
 }
 
 .blockCard {
-  gap: 25px;
+  gap: 24px;
   padding: 50px;
-  height: 230px;
   width: 500px;
+  height: 240px;
   display: flex;
   align-items: left;
   justify-content: left;
   flex-direction: row;
   border: 2px solid #d9e4fa;
   border-radius: 30px;
+  @media (max-width: 1000px) {
+    border: none;
+    background-color: rgba(238, 243, 255, 0.801);
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1000 - 320)));
+  }
+  @media (max-width: 720px) {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1000 - 320)));
+  }
 }
 
 .blockCard img {
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 220px;
+  object-fit: scale-down;
 }
 
 .blockIcons {
@@ -278,6 +294,10 @@
   align-items: left;
   justify-content: left;
   flex-direction: row;
+  @media (max-width: 720px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .blockIcons img {
@@ -286,7 +306,7 @@
 }
 
 .blockText {
-  gap: 25px;
+  gap: 24px;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -299,6 +319,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  @media (max-width: 1000px) {
+    gap: 40px;
+    flex-direction: column;
+  }
 }
 
 .blockArrows {
@@ -307,13 +331,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  @media (max-width: 540px) {
+  @media (max-width: 940px) {
     flex-direction: column;
   }
 }
 
 .blockArrows img {
-  @media (max-width: 540px) {
+  @media (max-width: 940px) {
     height: 36px;
     transform: rotate(90deg);
   }
@@ -324,8 +348,8 @@
   font-size: 24px;
   font-weight: 400;
   font-family: "Montserrat";
-  @media (max-width: 540px) {
-    font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (540 - 320)));
+  @media (max-width: 940px) {
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (940 - 320)));
   }
 }
 
@@ -336,21 +360,23 @@
   border: 2px solid #d9e4fa;
   border-radius: 30px;
   overflow: hidden;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  @media (max-width: 540px) {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .prev-button,
@@ -412,8 +438,23 @@
   right: 10px;
 }
 
+.casesForAdaptiveLayout img {
+  display: none;
+  @media (max-width: 1000px) {
+    gap: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .blockMessengers {
-  gap: 25px;
+  gap: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,4 +484,7 @@
   font-size: 12px;
   font-weight: 500;
   font-family: "Montserrat";
+  @media (max-width: 540px) {
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (540 - 320)));
+  }
 }
