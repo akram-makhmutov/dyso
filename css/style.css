@@ -487,3 +487,493 @@ img[hidden] {
     font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (540 - 320)));
   }
 }
+@font-face {
+  font-family: Unbounded-ExtraLight;
+  src: url(../fonts/Unbounded-ExtraLight.ttf);
+}
+@font-face {
+  font-family: Unbounded-Light;
+  src: url(../fonts/Unbounded-Light.ttf);
+}
+
+@font-face {
+  font-family: Unbounded-Regular;
+  src: url(../fonts/Unbounded-Regular.ttf);
+}
+
+@font-face {
+  font-family: Unbounded-Medium;
+  src: url(../fonts/Unbounded-Medium.ttf);
+}
+
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+.container {
+  max-width: 1920px;
+  padding: 60px 120px;
+  @media (max-width: 540px) {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
+
+.mainLogo {
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  @media (max-width: 540px) {
+    margin-top: 37px;
+  }
+}
+
+.mainLogo img {
+  @media (max-width: 540px) {
+    width: 280px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.mainTitle {
+  gap: 60px;
+  margin-top: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media (max-width: 540px) {
+    gap: 42px;
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.mainTitle h1 {
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-family: "Unbounded-Light";
+  @media (max-width: 540px) {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.mainTitle span {
+  color: #ef16f3;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: "Unbounded-Regular";
+  @media (max-width: 540px) {
+    font-size: 82px;
+  }
+}
+
+.mainTitle p {
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  text-align: center;
+  font-family: "Unbounded-Light";
+  @media (max-width: 540px) {
+    color: #000000;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (540 - 320)));
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.mainTitle a {
+  text-decoration: none;
+  font-family: "Unbounded-ExtraLight";
+}
+
+.sendButton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid #50b313;
+  color: #50b313;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 14px;
+  width: 300px;
+  font-family: "Unbounded-Light";
+  background-color: transparent;
+  @media (max-width: 540px) {
+    font-size: 16px;
+    border: 2px solid #50b313;
+    width: 240px;
+  }
+}
+
+.sendButton:hover a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.5s easy;
+  border: 2px solid #f112f6;
+  color: #f112f6;
+  border-radius: 50px;
+  font-size: 20px;
+  transform: scale(1.1);
+  font-family: "Unbounded-Light";
+  background-color: transparent;
+  cursor: pointer;
+  @media (max-width: 540px) {
+    font-size: 16px;
+    border: 2px solid #f112f6;
+    width: 240px;
+  }
+}
+
+.svgMail {
+  font-family: "Unbounded-ExtraLight";
+}
+
+.svgMail:hover svg {
+  fill: transparent;
+  stroke: #f112f6;
+}
+
+.blockName h1 {
+  color: #000000;
+  gap: 65px;
+  font-size: 32px;
+  letter-spacing: 1.8px;
+  line-height: 36px;
+  text-transform: none;
+  text-align: center;
+  font-family: "Unbounded-Regular";
+  @media (max-width: 540px) {
+    font-size: calc(22px + (32 - 22) * ((100vw - 320px) / (540 - 320)));
+  }
+}
+
+.blockFlexItems {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+}
+
+.blockFlex {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media (max-width: 1000px) {
+    gap: 30px;
+  }
+}
+
+.blockFlex img {
+  @media (max-width: 1000px) {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.blockFlex h1 {
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-transform: none;
+  font-family: "Unbounded-Medium";
+}
+
+.blockFlex span {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: none;
+  font-family: "Montserrat";
+  @media (max-width: 720px) {
+    text-align: center;
+    line-height: 22px;
+    font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (540 - 320)));
+  }
+}
+
+.blockFlex ul {
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  font-weight: 400;
+  list-style: inside;
+  text-transform: none;
+  font-family: "Montserrat";
+  @media (max-width: 540px) {
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (540 - 320)));
+  }
+}
+
+.blockFlex li {
+  line-height: 1.6;
+}
+
+.createLine {
+  height: 480px;
+  border-right: 1px solid #000000;
+  @media (max-width: 1000px) {
+    height: 30px;
+    border-right: transparent;
+  }
+}
+
+.blockCard {
+  gap: 24px;
+  padding: 50px;
+  width: 500px;
+  height: 240px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: row;
+  border: 2px solid #d9e4fa;
+  border-radius: 30px;
+  @media (max-width: 1000px) {
+    border: none;
+    background-color: rgba(238, 243, 255, 0.801);
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1000 - 320)));
+  }
+  @media (max-width: 720px) {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1000 - 320)));
+  }
+}
+
+.blockCard img {
+  width: 200px;
+  height: 220px;
+  object-fit: scale-down;
+}
+
+.blockIcons {
+  gap: 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: row;
+  @media (max-width: 720px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.blockIcons img {
+  width: 30px;
+  height: 30px;
+}
+
+.blockText {
+  gap: 24px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.blockFewCards {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  @media (max-width: 1000px) {
+    gap: 40px;
+    flex-direction: column;
+  }
+}
+
+.blockArrows {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  @media (max-width: 940px) {
+    flex-direction: column;
+  }
+}
+
+.blockArrows img {
+  @media (max-width: 940px) {
+    height: 36px;
+    transform: rotate(90deg);
+  }
+}
+
+.blockArrows span {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  @media (max-width: 940px) {
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (940 - 320)));
+  }
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #d9e4fa;
+  border-radius: 30px;
+  overflow: hidden;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #d9e4fa;
+  border: none;
+  font-size: 24px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.prev-button:hover {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #cfdefc;
+  border: none;
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #cfdefc;
+  border: none;
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.prev-button:active {
+  background-color: #c2d6ff;
+}
+
+.next-button:active {
+  background-color: #c2d6ff;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.casesForAdaptiveLayout img {
+  display: none;
+  @media (max-width: 1000px) {
+    gap: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blockMessengers {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.app:hover img {
+  transform: scale(1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.footerTitle {
+  gap: 30px;
+  margin-top: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footerTitle p {
+  color: #445ac9;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  @media (max-width: 540px) {
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (540 - 320)));
+  }
+}
