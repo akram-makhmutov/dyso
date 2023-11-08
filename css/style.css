@@ -38,7 +38,7 @@
   justify-content: center;
   display: flex;
   @media (max-width: 540px) {
-    margin-top: 37px;
+    margin-top: 36px;
   }
 }
 
@@ -61,7 +61,7 @@
   flex-direction: column;
   @media (max-width: 540px) {
     gap: 42px;
-    margin-top: 57px;
+    margin-top: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
