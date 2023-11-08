@@ -33,7 +33,7 @@
 }
 
 .mainLogo {
-  margin-top: 40px;
+  margin-top: 140px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -117,7 +117,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-  border: 2px solid #50b313;
+  border: 2px solid #000000;
   color: #50b313;
   border-radius: 50px;
   font-size: 20px;
