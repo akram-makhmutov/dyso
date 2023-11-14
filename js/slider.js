@@ -28,4 +28,23 @@ function updateSlider() {
   });
 }
 
+function currentSlide(n) {
+  slideIndex = n;
+  updateSlider();
+}
+
+function autoSlide() {
+  showNextSlide();
+}
+
+let interval = setInterval(autoSlide, 5000);
+
+slider.addEventListener('mouseenter', () => {
+  clearInterval(interval);
+});
+
+slider.addEventListener('mouseleave', () => {
+  interval = setInterval(autoSlide, 5000);
+});
+
 updateSlider();

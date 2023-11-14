@@ -365,6 +365,30 @@
   right: 10px;
 }
 
+.dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots span {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9e4fa;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dots span:active {
+  background-color: #b4cdff;
+}
+
 img[hidden] {
   display: none;
   @media (max-width: 1000px) {
@@ -483,58 +507,4 @@ img[hidden] {
   justify-content: center;
   flex-direction: row;
   cursor: pointer;
-}
-
-.go-top {
-  position: fixed; /* фиксированное позиционирование */
-  right: 20px; /* отступ слева 20px */
-  top: 50%; /* выравниваем по центру */
-  transform: translateY(-50%); /* выравниваем по центру */
-  cursor: pointer; /* при наведении меняем курсор */
-  /* display: none; по умолчанию скрываем кнопку */
-  font-size: 20px;
-  padding: 15px 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  color: #ffffff;
-  background-color: #d9e4fa;
-  border: none;
-  font-size: 24px;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.prev-button:hover {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  color: #ffffff;
-  background-color: #cfdefc;
-  border: none;
-  font-size: 24px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.prev-button:active {
-  background-color: #c2d6ff;
-}
-
-.prev-button {
-  left: 10px;
-}
-
-/* меняем прозрачность при наведении мышкой */
-.go-top:hover {
-  background-color: rgba(0, 51, 153, 0.15);
-}
-
-/* модификатор для отображения кнопки */
-.go-top--show {
-  display: block;
 }
