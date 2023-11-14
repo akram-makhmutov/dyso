@@ -406,15 +406,15 @@ img[hidden] {
     border: none;
     background-color: rgba(238, 243, 255, 0.801);
     padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1000 - 320)));
-  }
-  @media (max-width: 720px) {
-    width: 300px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1000 - 320)));
+    @media (max-width: 720px) {
+      width: 280px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1000 - 320)));
+    }
   }
 }
 
@@ -483,4 +483,58 @@ img[hidden] {
   justify-content: center;
   flex-direction: row;
   cursor: pointer;
+}
+
+.go-top {
+  position: fixed; /* фиксированное позиционирование */
+  right: 20px; /* отступ слева 20px */
+  top: 50%; /* выравниваем по центру */
+  transform: translateY(-50%); /* выравниваем по центру */
+  cursor: pointer; /* при наведении меняем курсор */
+  /* display: none; по умолчанию скрываем кнопку */
+  font-size: 20px;
+  padding: 15px 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #d9e4fa;
+  border: none;
+  font-size: 24px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.prev-button:hover {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #cfdefc;
+  border: none;
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.prev-button:active {
+  background-color: #c2d6ff;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+/* меняем прозрачность при наведении мышкой */
+.go-top:hover {
+  background-color: rgba(0, 51, 153, 0.15);
+}
+
+/* модификатор для отображения кнопки */
+.go-top--show {
+  display: block;
 }
