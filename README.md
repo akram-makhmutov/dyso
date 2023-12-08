@@ -1,4 +1,4 @@
-# dyso
+# Dyso
 HTML
 CSS
 
